@@ -27,7 +27,6 @@ router.get('/city/:cityName', function (req, res) {
 
 
 router.get('/cities', function (req, res) {
-
   City.find({}).exec(function (err, city) {
     res.send(city)
 

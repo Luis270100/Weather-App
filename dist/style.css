@@ -1,31 +1,54 @@
 body{
     background-color: #2D2D2A;
-    
+}
+
+#search-container{
+
+    text-align: center
 }
 
 
 .getCity{
-    width: 80%;
-    padding: 15px 22px;
-    margin: 10px 10px;
-    box-sizing: border-box; 
-
+    display: block;
+    width: 40%;
+    padding: 15px 15px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    border-radius: 20px;
+    border: 1px solid black
 }
 
+
 .search{
+    display: block;
     background-color: #6E7271;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%
+    margin: 0 auto;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+.search:hover{
+    background-color: #336699;
 }
                
 
 #container{
-    margin-top: 25px;
+    margin: 25px 20px;
+    width: 25vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
+
 .city{
+    flex-grow: 2;
+    margin-left: 20px;
     text-align: center;
     border-radius: 10px;
     background-color: #336699;
+    padding: 10%
 }

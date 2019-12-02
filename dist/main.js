@@ -1,3 +1,4 @@
+
 const temp = new tempManager()
 const render = new Renderer()
 
@@ -15,16 +16,13 @@ const handleSearch = async function () {
     console.log(city)
     render.renderData(city)
     $(".getCity").val("")
-
 }
-
 
 $('body').on("click", ".save", async function () {
     let cityName = $(this).siblings('.name').text()
     console.log(cityName)
     let data = await temp.saveCity(cityName)
 })
-
 
 $('body').on("click", ".delete", async function () {
     let cityName = $(this).siblings('.name').text()
